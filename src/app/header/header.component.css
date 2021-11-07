@@ -1,0 +1,43 @@
+.head{
+    width: 100%;
+    padding-left: 12%;
+    height: 80px;
+    background: rgb(255, 255, 255);
+}
+
+.logo{
+    display: flex;
+    padding-top: 14px;
+}
+
+.contact-icon{
+    height: 40px;
+    width: 40px;
+    padding-top: 4px;
+    margin-right: 10px;
+    align-content: center;
+}
+
+img{
+    margin: auto;
+    width: inherit;
+    height: auto;
+    justify-content: center;
+}
+
+.address{
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #008CFF;
+}
+
+.book{
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #42515F;
+    margin-top: -4px;
+}

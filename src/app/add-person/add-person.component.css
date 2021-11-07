@@ -1,0 +1,115 @@
+.form-container{
+
+    width: 50%;
+    margin: auto;
+    margin-top: 35px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 9px 3px rgba(0, 0, 0, 0.288);
+}
+
+.form-header{
+    height: 80px;
+    background-color: #008CFF;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.title{
+padding-left: 35%;
+padding-top: 4%;
+color: #FFFFFF;
+font-family: Roboto;
+font-size: larger;
+text-transform: uppercase;
+}
+
+.cancle{
+    padding-right: 3%;
+    padding-top: 4%;
+    cursor: pointer;
+}
+
+.alert{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: red;
+}
+
+.form{
+    width: 80%;
+    margin: auto;
+}
+
+.form-row{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    font-family: Roboto;
+    font-size: small;
+    color: #42515F;
+}
+
+input{
+    margin-top: 7px;
+    height: 30px;
+    border: 1px solid #BDBDBD ;
+    border-radius: 2px;
+}
+
+.address{
+    height:60px;
+}
+
+.combo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.select-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown{
+    margin-top: 7px;
+    height: 33px;
+    border: 1px solid #BDBDBD ;
+    border-radius: 2px;
+    width: 150px;
+}
+
+.submit-reset{
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+
+button{
+    margin-left: 30px;
+    padding: 7px;
+    width: 130px;
+    background-color: #E2E2E2;
+    border: 1px solid #969696;
+    font-family: Roboto;
+    border-radius: 3px;
+}
+
+button:hover{
+    margin-left: 30px;
+    padding: 7px;
+    width: 130px;
+    background-color: #707070;
+    border: 1px solid #969696;
+    font-family: Roboto;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
