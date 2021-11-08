@@ -1,3 +1,4 @@
+import { MatIconModule } from '@angular/material/icon';
 import { ContactService } from './service/contact.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatIconModule
     
   ],
   providers: [ContactService],

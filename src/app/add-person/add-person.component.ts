@@ -34,6 +34,7 @@ export class AddPersonComponent implements OnInit {
     this.contact.zip=form.value.zip;
 
     console.log(this.contact)
+    
     this.service.addContact(this.contact).subscribe(n=>console.log(n));
     
   }
@@ -48,5 +49,9 @@ export class AddPersonComponent implements OnInit {
   reset(){
     window.location.reload();
     console.log("re")
+  }
+
+  checkAdd(formDetails:any){
+
   }
 }

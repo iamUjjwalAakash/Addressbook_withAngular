@@ -5,10 +5,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddPersonComponent } from './add-person/add-person.component';
 
 const routes: Routes = [
-  {path:"", component:PersonDetailsComponent},
+  {path:"", redirectTo:"person-deatils", pathMatch:"full"},
   {path:"person-deatils", component: PersonDetailsComponent},
-  {path:"add-contact",component:AddPersonComponent},
-  {path:"**", component:PersonDetailsComponent}
+  {path:"add-contact",component:AddPersonComponent}
 ];
 
 @NgModule({

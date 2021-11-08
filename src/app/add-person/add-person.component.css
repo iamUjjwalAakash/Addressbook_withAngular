@@ -55,7 +55,7 @@ text-transform: uppercase;
     color: #42515F;
 }
 
-input{
+.input{
     margin-top: 7px;
     height: 30px;
     border: 1px solid #BDBDBD ;
@@ -63,6 +63,10 @@ input{
 }
 
 .address{
+    margin-top: 7px;
+    height: 30px;
+    border: 1px solid #BDBDBD ;
+    border-radius: 2px;
     height:60px;
 }
 
@@ -92,7 +96,7 @@ input{
     margin-bottom: 50px;
 }
 
-button{
+.button{
     margin-left: 30px;
     padding: 7px;
     width: 130px;
@@ -102,7 +106,7 @@ button{
     border-radius: 3px;
 }
 
-button:hover{
+.button:hover{
     margin-left: 30px;
     padding: 7px;
     width: 130px;
@@ -112,4 +116,8 @@ button:hover{
     border-radius: 3px;
     cursor: pointer;
     color: #FFFFFF;
+}
+
+.mat-icon{
+    color: white;
 }

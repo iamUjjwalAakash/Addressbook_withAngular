@@ -12,6 +12,8 @@ export class PersonDetailsComponent implements OnInit, OnChanges{
   constructor(public service:ContactService) { }
   contactList:Contact[]= []
 
+  headerList:String[]=["Fullname","Address","City","State","Zip Code","Phone Number"]
+
 
   ngOnInit(): void {
     this.getPersonDetails();

@@ -5,21 +5,21 @@
             Person Address form
         </div>
         <div class="cancle">
-            <a (click)=cancle()>
-                <img src="../../assets/images/cancel.jpeg" alt="">
-            </a>
+            <div (click)=cancle()>
+                <mat-icon >cancel</mat-icon>
+            </div>
         </div>
     </div>
     <form class="form" #formDetails="ngForm" name="contact">
         <div class="form-row">
             <label class="label text" for="name">Full Name</label>
             <input class="input" type="text" pattern="[A-Z][a-z]{2,}$" ngModel name="name" #name="ngModel" required>
-            <div class="alert" [hidden]="!(name.errors?.pattern && !name.untouched)">Invalid Name</div>
+            <div class="alert" [hidden]="!(name.errors?.pattern && !name.untouched)">Name should start with capital letter and have minimum 3 letters </div>
         </div>
         <div class="form-row">
             <label class="label text">Phone Number</label>
             <input class="input" type="tel" pattern="[0-9]{10}$" ngModel name="phone" #phone="ngModel" required>
-            <div class="alert" [hidden]="!(phone.errors?.pattern && !phone.untouched)">Invalid Number</div>
+            <div class="alert" [hidden]="!(phone.errors?.pattern && !phone.untouched)">Phone Number should be of 10 digit</div>
         </div>
         <div class="form-row">
             <label class="label text">Address</label>
@@ -43,13 +43,13 @@
                 </div>
                 <div class="select-block">
                     <label class="label text">Zip Code</label>
-                    <input class="zip" type="number" ngModel name="zip" #zip="ngModel" required>
+                    <input class="input" type="number" ngModel name="zip" #zip="ngModel" required>
 
                 </div>
             </div>
             <div class="submit-reset">
-                <button (click)=addContact(formDetails)>Add</button>
-                <button (click)=reset()>Reset</button>
+                <button class="button" [disabled]="!formDetails.valid" (click)=addContact(formDetails)>Add</button>
+                <button class="button" (click)=reset()>Reset</button>
             </div>
         </div>
 

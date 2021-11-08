@@ -3,47 +3,39 @@
     <div class="person-detail-text">Person Details
     </div>
     <div class="search-and-add-button">
-        <a routerLink="/add-contact" routerLinkActive=true class="add-button" >
-            <img src="../assets/icons/add-24px.svg" alt="">
+        <div routerLink="/add-contact" routerLinkActive=true class="add-button">
+            <div class="add-icon-position">
+                <mat-icon class="add-icon">add</mat-icon>
+            </div>
             <span>Add Person</span>
-        </a>
+        </div>
     </div>
 </div>
-<table>
-    <colgroup>
-        <col>
-        <col span="1" width="225px">
-        <col>
-        <col>
-        <col>
-        <col width="130px">
-      </colgroup>
-    <tr>
-        <th>Fullname</th>
-        <th>Address</th>
-        <th>City</th>
-        <th>State</th>
-        <th>Zip Code</th>
-        <th>Phone Number</th>
-        <th>     </th>
+<table class="table">
+
+    <tr class="tr">
+        <th class="th" *ngFor="let head of headerList">{{head}}</th>
+        <th class="th"> </th>
     </tr>
-    <tr *ngFor="let person of contactList">
-        <td>{{person.fname}}</td>
-        <td> <div class="address"> {{person.address}}</div></td>
-        <td>{{person.city}}</td>
-        <td>{{person.state}}</td>
-        <td>{{person.zip}}</td>
-        <td>{{person.phone}}</td>
-        <td>
+    <tr class="tr" *ngFor="let person of contactList">
+        <td class="td">{{person.fname}}</td>
+        <td class="td">
+            <div class="address"> {{person.address}}</div>
+        </td>
+
+        <td class="td">{{person.city}}</td>
+        <td class="td">{{person.state}}</td>
+        <td class="td">{{person.zip}}</td>
+        <td class="td">{{person.phone}}</td>
+        <td class="td">
             <div class="action">
-            <a  (click)=deletePerson(person.id) class="delete">
-                <img src="../../assets/icons/delete-black-18dp.svg" alt="">
-            </a>
-                <a href="#" class="create">
-                <img src="../../assets/icons/create-black-18dp.svg" alt="">
-            </a>
+                <div (click)=deletePerson(person.id) class="delete">
+                    <mat-icon>delete</mat-icon>
+                </div>
+                <div class="create">
+                    <mat-icon>create</mat-icon>
+                </div>
             </div>
         </td>
     </tr>
 </table>
-

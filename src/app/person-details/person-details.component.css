@@ -1,6 +1,6 @@
 .header-content{
-    display: flex;
     flex-direction: row;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 76%;
@@ -20,18 +20,14 @@
     outline: none;
     cursor: pointer;
     text-decoration: none;
-    justify-content: center;
+    justify-content:center;
     margin-top: 5px;
+    display: flex;
 }
 
 .add-button img{
     margin-top: 3px;
     margin-left: 0px;
-}
-
-a{
-    display: flex;
-    justify-items: center;
 }
 
 .search-and-add-button{
@@ -42,7 +38,7 @@ a{
     color: #42515F;
 }
 
-table{
+.table{
     width: 76%;
     margin: auto;
     text-align: left;
@@ -50,12 +46,12 @@ table{
     border-spacing: 0 3px;
 }
 
-tr {
+.tr {
     background: #ffffff 0% 0% no-repeat;
     margin: 15px;
 
 }
-th{
+.th{
     color: #658292;
     font-family: Lato;
     background-color: #ebebeb;
@@ -68,7 +64,7 @@ th{
     justify-content: space-around;
 }
 
-td {
+.td {
     font: normal normal normal 14px/21px Roboto;
     letter-spacing: 0;
     color: #3d3d3d;
@@ -77,3 +73,18 @@ td {
     
     
     }
+
+  .mat-icon{
+    font-size: 20px;
+    color:#658292 ;
+  }
+
+  .add-button .mat-icon{
+    font-size: 25px;
+    color: white;
+  }
+
+  .add-icon{
+      padding-top: 0px;
+  }
+
